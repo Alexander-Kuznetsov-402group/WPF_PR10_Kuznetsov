@@ -32,18 +32,24 @@ namespace WPF_PF10_Kuznetsov
 
         private void DeleteButton_Click(object sender, RoutedEventArgs e)
         {
-            
+            listBox1.Items.Remove(textBox1.Text);
         }
 
         private void Sort_Click(object sender, RoutedEventArgs e)
         {
-            listBox1.Items.SortDescriptions.Add(new System.ComponentModel.SortDescription("Content", System.ComponentModel.ListSortDirection.Ascending));
+            listBox1.Items.SortDescriptions.Add(new System.ComponentModel.SortDescription("Text", System.ComponentModel.ListSortDirection.Ascending));
         }
 
         private void Button1_Click_1(object sender, RoutedEventArgs e)
         {
             Window1 window1 = new Window1();
             window1.Show();
+        }
+
+        private void Button2_Click(object sender, RoutedEventArgs e)
+        {
+            Window2 window2 = new Window2();
+            window2.Show();
         }
     }
 }

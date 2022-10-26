@@ -58,6 +58,9 @@
     <Compile Include="Window1.xaml.cs">
       <DependentUpon>Window1.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Window2.xaml.cs">
+      <DependentUpon>Window2.xaml</DependentUpon>
+    </Compile>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -71,6 +74,10 @@
       <SubType>Code</SubType>
     </Compile>
     <Page Include="Window1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Window2.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -118,6 +125,14 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="resource\Mango Shake.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="resource\Диван.jpg" />
+    <Resource Include="resource\Кресло.jpg" />
+    <Resource Include="resource\Кровать.JPG" />
+    <Resource Include="resource\Стол.JPG" />
+    <Resource Include="resource\Стул.JPG" />
+    <Resource Include="resource\Торшер.JPG" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -1,0 +1,76 @@
+﻿<Window x:Class="WPF_PF10_Kuznetsov.Window2"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPF_PF10_Kuznetsov"
+        mc:Ignorable="d"
+        Title="Window2" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="67*"/>
+            <ColumnDefinition Width="197*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="17*"/>
+            <RowDefinition Height="34*"/>
+            <RowDefinition Height="36*"/>
+            <RowDefinition Height="39*"/>
+            <RowDefinition Height="36*"/>
+            <RowDefinition Height="257*"/>
+        </Grid.RowDefinitions>
+
+        <StackPanel Orientation="Vertical" Grid.RowSpan="6" Grid.ColumnSpan="2">
+            <TextBlock Margin="10,10,10,10" FontWeight="Bold">Выберите элемент мебели</TextBlock>
+            <ListBox Name="mcListBox" Height="100" Width="100" Margin="10,10,0,0" HorizontalAlignment="Left">
+                <ListBoxItem Selected="ListBoxItem_Selected">
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="Диван"></TextBlock>
+                    </StackPanel>
+                </ListBoxItem>
+                <ListBoxItem Selected="ListBoxItem_Selected_1">
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="Кресло"></TextBlock>
+                    </StackPanel>
+                </ListBoxItem>
+                <ListBoxItem Selected="ListBoxItem_Selected_2">
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="Стол"></TextBlock>
+                    </StackPanel>
+                </ListBoxItem>
+                <ListBoxItem Selected="ListBoxItem_Selected_3">
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="Торшер"></TextBlock>
+                    </StackPanel>
+                </ListBoxItem>
+                <ListBoxItem Selected="ListBoxItem_Selected_4">
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="Кровать"></TextBlock>
+                    </StackPanel>
+                </ListBoxItem>
+                <ListBoxItem Selected="ListBoxItem_Selected_5">
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="Стул"></TextBlock>
+                    </StackPanel>
+                </ListBoxItem>
+            </ListBox>
+            <TextBox Height="23" Name="textBox1" Width="120" Margin="10,10,0,0" HorizontalAlignment="Left">
+                <TextBox.Text>
+                    <Binding ElementName="mcListBox" Path="Selected.Text" />
+                </TextBox.Text>
+            </TextBox>
+            <Canvas Margin="10,10,0,0" Height="200" Width="200" HorizontalAlignment="Left" >
+                <Image x:Name="myImage" Height="200" Width="200"/>
+            </Canvas>
+        </StackPanel>
+        <Button Name="button1"
+                HorizontalAlignment="Left"
+                Click="button1_Click" Width="70" Height="25" Grid.Row="1" Grid.Column="1" >Add Item</Button>
+        <Button Name="DeleteButton"
+                HorizontalAlignment="Left"
+                Click="DeleteButton_Click" Width="70" Height="25" Grid.Row="2" Grid.Column="1">Delete Item</Button>
+        <Button Content="Sort" x:Name="Sort"
+                HorizontalAlignment="Left"
+                Click="Sort_Click" Width="70" Height="25" Grid.Row="3" Grid.Column="1"/>
+    </Grid>
+</Window>
