@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WPF_PF10_Kuznetsov"
         mc:Ignorable="d"
-        Title="Window1" Height="450" Width="800">
+        Title="Задание 2" Height="450" Width="800">
     <Grid>
         <StackPanel Orientation="Vertical">
             <TextBlock Margin="10,10,10,10" FontWeight="Bold">Pick a color from below list</TextBlock>

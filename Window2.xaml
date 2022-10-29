@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WPF_PF10_Kuznetsov"
         mc:Ignorable="d"
-        Title="Window2" Height="450" Width="800">
+        Title="Самостоятельная работа" Height="450" Width="800">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="67*"/>
@@ -23,36 +23,13 @@
         <StackPanel Orientation="Vertical" Grid.RowSpan="6" Grid.ColumnSpan="2">
             <TextBlock Margin="10,10,10,10" FontWeight="Bold">Выберите элемент мебели</TextBlock>
             <ListBox Name="mcListBox" Height="100" Width="100" Margin="10,10,0,0" HorizontalAlignment="Left">
-                <ListBoxItem Selected="ListBoxItem_Selected">
-                    <StackPanel Orientation="Horizontal">
-                        <TextBlock Text="Диван"></TextBlock>
-                    </StackPanel>
-                </ListBoxItem>
-                <ListBoxItem Selected="ListBoxItem_Selected_1">
-                    <StackPanel Orientation="Horizontal">
-                        <TextBlock Text="Кресло"></TextBlock>
-                    </StackPanel>
-                </ListBoxItem>
-                <ListBoxItem Selected="ListBoxItem_Selected_2">
-                    <StackPanel Orientation="Horizontal">
-                        <TextBlock Text="Стол"></TextBlock>
-                    </StackPanel>
-                </ListBoxItem>
-                <ListBoxItem Selected="ListBoxItem_Selected_3">
-                    <StackPanel Orientation="Horizontal">
-                        <TextBlock Text="Торшер"></TextBlock>
-                    </StackPanel>
-                </ListBoxItem>
-                <ListBoxItem Selected="ListBoxItem_Selected_4">
-                    <StackPanel Orientation="Horizontal">
-                        <TextBlock Text="Кровать"></TextBlock>
-                    </StackPanel>
-                </ListBoxItem>
-                <ListBoxItem Selected="ListBoxItem_Selected_5">
-                    <StackPanel Orientation="Horizontal">
-                        <TextBlock Text="Стул"></TextBlock>
-                    </StackPanel>
-                </ListBoxItem>
+                <ListBoxItem Content="Диван"  Selected="ListBoxItem_Selected" HorizontalContentAlignment="Left" VerticalContentAlignment="Center"/>
+                <ListBoxItem Content="Кресло" Selected="ListBoxItem_Selected_1" HorizontalContentAlignment="Left" VerticalContentAlignment="Center"/>
+                <ListBoxItem Content="Стол"  Selected="ListBoxItem_Selected_2" HorizontalContentAlignment="Left" VerticalContentAlignment="Center"/>
+                <ListBoxItem Content="Торшер" Selected="ListBoxItem_Selected_3" HorizontalContentAlignment="Left" VerticalContentAlignment="Center"/>
+                <ListBoxItem Content="Кровать"  Selected="ListBoxItem_Selected_4" HorizontalContentAlignment="Left" VerticalContentAlignment="Center"/>
+
+                <ListBoxItem Content="Стул"  Selected="ListBoxItem_Selected_5" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" />
             </ListBox>
             <TextBox Height="23" Name="textBox1" Width="120" Margin="10,10,0,0" HorizontalAlignment="Left">
                 <TextBox.Text>

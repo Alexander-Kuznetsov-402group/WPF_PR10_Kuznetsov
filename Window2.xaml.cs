@@ -36,7 +36,7 @@ namespace WPF_PF10_Kuznetsov
 
         private void Sort_Click(object sender, RoutedEventArgs e)
         {
-            mcListBox.Items.SortDescriptions.Add(new System.ComponentModel.SortDescription("Text", System.ComponentModel.ListSortDirection.Ascending));
+            mcListBox.Items.SortDescriptions.Add(new System.ComponentModel.SortDescription("Content", System.ComponentModel.ListSortDirection.Ascending));
         }
 
         private void ListBoxItem_Selected(object sender, RoutedEventArgs e)
