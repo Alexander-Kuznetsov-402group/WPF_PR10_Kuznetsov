@@ -23,12 +23,7 @@
             <ColumnDefinition Width="166*"/>
         </Grid.ColumnDefinitions>
         <ListBox Margin="8,5,0,0" Name="listBox1" HorizontalAlignment="Left" VerticalAlignment="Top" Width="194" Height="210" Grid.Row="2" Grid.RowSpan="6">
-            <ListBoxItem 
-                         Background="LightCoral"
-                         Foreground="Red"
-                         FontFamily="Verdana"
-                         FontSize="12"
-                         FontWeight="Bold">
+            <ListBoxItem Style="{StaticResource ListBoxItem}">
                 <CheckBox Name="CoffieCheckBox">
                     <StackPanel Orientation="Horizontal">
                         <Image Source="resource/coffi.png" Height="30"></Image>
@@ -36,12 +31,7 @@
                     </StackPanel>
                 </CheckBox>
             </ListBoxItem>
-            <ListBoxItem
-                         Background="LightGray"
-                         Foreground="Black"
-                         FontFamily="Verdana"
-                         FontSize="12"
-                         FontWeight="Bold">
+            <ListBoxItem Style="{StaticResource ListBoxItem}">
                 <CheckBox Name="TeaCheckBox">
                     <StackPanel Orientation="Horizontal">
                         <Image Source="resource/Tea.png" Height="30"></Image>
@@ -49,12 +39,7 @@
                     </StackPanel>
                 </CheckBox>
             </ListBoxItem>
-            <ListBoxItem
-                         Background="Aqua"
-                         Foreground="Violet"
-                         FontFamily="Verdana"
-                         FontSize="12"
-                         FontWeight="Bold">
+            <ListBoxItem Style="{StaticResource ListBoxItem}">
                 <CheckBox Name="OrangeJuiceCheckBox">
                     <StackPanel Orientation="Horizontal">
                         <Image Source="resource/Orange Juice.png" Height="30"></Image>
@@ -62,12 +47,7 @@
                     </StackPanel>
                 </CheckBox>
             </ListBoxItem>
-            <ListBoxItem 
-                         Background="Lime"
-                         Foreground="Green"
-                         FontFamily="Verdana"
-                         FontSize="12"
-                         FontWeight="Bold">
+            <ListBoxItem Style="{StaticResource ListBoxItem}">
                 <CheckBox Name="MilkCheckBox">
                     <StackPanel Orientation="Horizontal">
                         <Image Source="resource/Milk.png" Height="30"></Image>
@@ -75,12 +55,7 @@
                     </StackPanel>
                 </CheckBox>
             </ListBoxItem>
-            <ListBoxItem 
-                         Background="Aqua"
-                         Foreground="Blue"
-                         FontFamily="Verdana"
-                         FontSize="12"
-                         FontWeight="Bold">
+            <ListBoxItem Style="{StaticResource ListBoxItem}">
                 <CheckBox Name="IcedTeaCheckBox">
                     <StackPanel Orientation="Horizontal">
                         <Image Source="resource/Iced Tea.png" Height="30"></Image>
@@ -88,12 +63,7 @@
                     </StackPanel>
                 </CheckBox>
             </ListBoxItem>
-            <ListBoxItem 
-                         Background="LightSlateGray"
-                         Foreground="Orange"
-                         FontFamily="Verdana"
-                         FontSize="12"
-                         FontWeight="Bold">
+            <ListBoxItem Style="{StaticResource ListBoxItem}">
                 <CheckBox Name="MangoShakeCheckBox">
                     <StackPanel Orientation="Horizontal">
                         <Image Source="resource/Mango Shake.png" Height="30"></Image>
@@ -110,7 +80,7 @@
         <Button Height="22" Name="button1"
                 VerticalAlignment="Top"
                 HorizontalAlignment="Left"
-                Width="81"
+                Width="81" 
                 Click="button1_Click" Grid.Column="1" Grid.Row="1">Add Item</Button>
         <Button Height="21" Margin="0,7,0,0" Name="DeleteButton"
                 VerticalAlignment="Top"
@@ -118,5 +88,8 @@
         <Button Content="Sort" x:Name="Sort"
                 Margin="0,6,0,0"
                 Click="Sort_Click" Grid.Column="1" Grid.Row="3"/>
+        <Button x:Name="Button4" Content="Переключиться на задание 1" Grid.Column="2" Grid.Row="5" Click="Button4_Click" Width="300" Height="25" />
+        <Button x:Name="Button5" Content="Переключиться на практическое задание" Grid.Column="2" Grid.Row="6" Click="Button5_Click" Width="300" Height="25" />
+        <Button x:Name="Button6" Content="Переключиться на Индивидуальное задание" Grid.Column="2" Grid.Row="4" Click="Button6_Click" Width="300" Height="25" />
     </Grid>
 </Window>

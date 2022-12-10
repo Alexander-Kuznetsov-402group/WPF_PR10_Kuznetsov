@@ -38,5 +38,23 @@ namespace WPF_PF10_Kuznetsov
         {
 
         }
+
+        private void Button4_Click(object sender, RoutedEventArgs e)
+        {
+            Window4 window4 = new Window4();
+            window4.Show();
+        }
+
+        private void Button5_Click(object sender, RoutedEventArgs e)
+        {
+            Window5 window5 = new Window5();
+            window5.Show();
+        }
+
+        private void Button6_Click(object sender, RoutedEventArgs e)
+        {
+            Window6 window6 = new Window6();
+            window6.Show();
+        }
     }
 }

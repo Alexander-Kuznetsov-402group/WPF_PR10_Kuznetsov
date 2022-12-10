@@ -9,20 +9,21 @@
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="9*"/>
-            <RowDefinition Height="22*"/>
-            <RowDefinition Height="28*"/>
-            <RowDefinition Height="24*"/>
-            <RowDefinition Height="38*"/>
-            <RowDefinition Height="40*"/>
+            <RowDefinition Height="23*"/>
+            <RowDefinition Height="29*"/>
+            <RowDefinition Height="25*"/>
+            <RowDefinition Height="39*"/>
+            <RowDefinition Height="41*"/>
+            <RowDefinition Height="36*"/>
             <RowDefinition Height="35*"/>
-            <RowDefinition Height="223*"/>
+            <RowDefinition Height="197*"/>
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="71*"/>
             <ColumnDefinition Width="27*"/>
             <ColumnDefinition Width="166*"/>
         </Grid.ColumnDefinitions>
-        <ListBox Margin="8,5,0,0" Name="listBox1" HorizontalAlignment="Left" VerticalAlignment="Top" Width="194" Height="210" Grid.Row="2" Grid.RowSpan="6">
+        <ListBox Margin="8,5,0,0" Name="listBox1" HorizontalAlignment="Left" VerticalAlignment="Top" Width="194" Height="210" Grid.Row="2" Grid.RowSpan="7">
             <ListBoxItem 
                          Background="LightCoral"
                          Foreground="Red"
@@ -106,20 +107,20 @@
                  HorizontalAlignment="Left"
                  Margin="8,0,0,0"
                  Name="textBox1"
-                 VerticalAlignment="Top" Width="193" Grid.Row="1" />
+                 VerticalAlignment="Center" Width="193" Grid.Row="1" />
         <Button Height="22" Name="button1"
-                VerticalAlignment="Top"
-                HorizontalAlignment="Left"
+                VerticalAlignment="Center"
+                HorizontalAlignment="Center"
                 Width="81"
                 Click="button1_Click" Grid.Column="1" Grid.Row="1">Add Item</Button>
-        <Button Height="21" Margin="0,7,0,0" Name="DeleteButton"
+        <Button Height="21" Margin="215,7,503,0" Name="DeleteButton"
                 VerticalAlignment="Top"
-                Click="DeleteButton_Click" Grid.Column="1" Grid.Row="2">Delete Item</Button>
+                Click="DeleteButton_Click" Grid.Row="2" Grid.ColumnSpan="3">Delete Item</Button>
         <Button Content="Sort" x:Name="Sort"
-                Margin="0,6,0,0"
-                Click="Sort_Click" Grid.Column="1" Grid.Row="3"/>
-        <Button x:Name="Button1" Content="Переключиться на следующее меню" Grid.Column="2" Grid.Row="4" Click="Button1_Click_1" Margin="139,9"/>
-        <Button x:Name="Button2" Content="Переключиться на самостоятельное задание" Grid.Column="2" Grid.Row="5" Click="Button2_Click" Margin="119,10" />
-        <Button x:Name="Button3" Content="Переключиться на Практическую работу 11" Grid.Column="2" Grid.Row="6" Click="Button3_Click" Margin="114,96,114,113"/>
+                Margin="215,6,503,0"
+                Click="Sort_Click" Grid.Row="3" Grid.ColumnSpan="3"/>
+        <Button x:Name="Button1" Content="Переключиться на следующее меню" Grid.Column="2" Grid.Row="4" Click="Button1_Click_1" Margin="139,9,139,9"/>
+        <Button x:Name="Button2" Content="Переключиться на самостоятельное задание" Grid.Column="2" Grid.Row="5" Click="Button2_Click" Margin="119,10,119,10" />
+        <Button x:Name="Button3" Content="Переключиться на Практическую работу 11" Grid.Column="2" Grid.Row="6" Click="Button3_Click" Margin="116,8,117,8"/>
     </Grid>
 </Window>

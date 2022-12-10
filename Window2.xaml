@@ -32,9 +32,6 @@
                 <ListBoxItem Content="Стул"  Selected="ListBoxItem_Selected_5" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" />
             </ListBox>
             <TextBox Height="23" Name="textBox1" Width="120" Margin="10,10,0,0" HorizontalAlignment="Left">
-                <TextBox.Text>
-                    <Binding ElementName="mcListBox" Path="Selected.Text" />
-                </TextBox.Text>
             </TextBox>
             <Canvas Margin="10,10,0,0" Height="200" Width="200" HorizontalAlignment="Left" >
                 <Image x:Name="myImage" Height="200" Width="200"/>
